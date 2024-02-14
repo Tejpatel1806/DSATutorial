@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tej's website</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+    body {
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('./gym.jpg');
+        background-size: cover;
+    }
+
+    .mid {
+        display: block;
+        width: 51%;
+        margin: 20px auto;
+        color: black;
+        /* border: 2px solid red; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        /* border: 2px solid red; */
+        color: white;
+        border: 2px solid green;
+    }
+
+    .left {
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 19px;
+        font-size: 16px;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: black;
+        text-decoration: underline;
+        padding: 34px 23px;
+    }
+
+    .btn {
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0px 9px;
+        color: khaki;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: brown;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin-top: 180px;
+        margin-left: 34px;
+        padding: 42px 82px;
+        width: 33%;
+        border-radius: 20px;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: black;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid red;
+        margin: 11px auto;
+        border-radius: 20px;
+        font-size: 25px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .container button {
+        display: blocK;
+        margin: auto;
+        width: 23%;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- for logo -->
+            <img src="./gym1.jpg" alt="">
+            <div>TEJ FITNESS</div>
+        </div>
+        <div class="mid">
+            <!-- for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- for buttons -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Emain Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Delhi Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Weight">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Height">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
